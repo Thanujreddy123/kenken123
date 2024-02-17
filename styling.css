@@ -1,0 +1,167 @@
+
+
+* {
+    font-family: optima;
+}
+
+.invis {
+    display: none;
+}
+
+#board {
+    border-collapse: collapse;
+}
+
+.row {
+    border-collapse: collapse;
+}
+
+.square {
+    border: 1px solid #222222;
+    border-collapse: collapse;
+}
+
+.selected {
+    background-color: lightblue;
+}
+
+.square-top-border {
+    border-top: 3px solid black;
+}
+
+.square-bottom-border {
+    border-bottom: 3px solid black;
+}
+
+.square-left-border {
+    border-left: 3px solid black;
+}
+
+.square-right-border {
+    border-right: 3px solid black;
+}
+
+.box-label {
+    text-align: left;
+}
+
+.box-number {
+    text-align: center;
+}
+
+.error {
+    color: #cc2e31;
+}
+
+.covered {
+    background-color: rgb(226, 204, 204);
+}
+
+.covered > p {
+    display: none;
+}
+body {
+    background-color:#707478; 
+    margin: 0; 
+    font-family: Arial, sans-serif; 
+}
+
+
+.action-button {
+    padding: 10px 18px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.action-button:hover {
+    background-color: #45a049;
+}
+.flex-container {
+    display: flex;
+    justify-content: space-around; 
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+#board-div {
+    padding:16px;
+    width: 40%; 
+  
+    
+}
+
+.controls-container {
+    width: 30%; 
+    margin-top: 20px;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background-color: #f7f7f7;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+}
+.input-field {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.operations {
+    margin-bottom: 10px;
+}
+
+.operations input[type="radio"] {
+    margin-right: 5px;
+}
+.dimension-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.create-button {
+    padding: 8px 16px;
+    border: none;
+    background-color: #3498db;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.create-button:hover {
+    background-color: #6b7b86;
+}
+
+.rules {
+    padding: 8px 16px;
+    border: none;
+    background-color: #3498db;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.rules:hover {
+    background-color: #6b7b86;
+}
+/* Styling for the input element */
+.input-box {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 120px;
+    outline: none; /* Remove default outline */
+}
+
+/* Placeholder text style */
+.input-box::placeholder {
+    color: #999; /* Placeholder text color */
+}

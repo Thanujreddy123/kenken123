@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Kenken Solver</title>
+		<link rel="stylesheet" href="styling.css">
+	</head>
+	<body> 
+        <div id="dimensions" class="dimension-container">
+            <img src="puzzl.jpg" alt="Image Description" id="img">
+            <h2>Welcome to KenKen Puzzle Solver</h2>
+            <p>This is KenKen Puzzle. Enter the size of the puzzle and start entering inputS!</p>
+            <h2>Size of the puzzle?</h2>
+            <input id="dim-input" type="number" min="2" max="9" class="input-box" placeholder="Enter the size">
+            <button id="create" class="create-button">Create Board</button>
+            <button id="rules" class="rules">Rules</button>
+            <p id="input-error" class="invis">Invalid. Please enter a number.</p>
+        </div>
+        <div id="flex-container">
+        <center>
+            <div id="board-div" class="board-container">
+                <!-- board inserted here -->
+            </div>
+            <p id="result" class="result class"></p>
+        </center>
+        <center>
+            <div id="controls" class="controls-container invis">
+                <input id="number" type="number" min="1" class="input-field">
+                <div class="operations">
+                    <input id="operation-add" type="radio" name="Operation" value="+"><label for="operation-add">+</label>
+                    <input id="operation-subtract" type="radio" name="Operation" value="-"><label for="operation-subtract">-</label>
+                    <input id="operation-multiply" type="radio" name="Operation" value="x"><label for="operation-multiply">x</label>
+                    <input id="operation-divide" type="radio" name="Operation" value="/"><label for="operation-divide">/</label>
+                    <input id="operation-none" type="radio" name="Operation" value="None"><label for="operation-none">None</label>
+                </div>
+                <button id="add-box" class="action-button">Add Box</button><br>
+                <button id="solve" class="action-button">Solve</button><br>
+                <button id="other" class="action-button invis">See Other Solutions</button>
+                <p class="error-message invis" id="add-box-error">Error: Not a Valid Box</p>
+                <p class="error-message invis" id="box-num-error">Error: Must Enter a Number for the Box</p>
+                <p class="error-message invis" id="box-op-error">Error: Must Enter an Operation for the Box</p>
+                <p class="error-message invis" id="box-op-inval-error">Error: Invalid Operation for this Box</p>
+                <p class="error-message invis" id="solve-start-error">Error: Must Fill All Boxes Before Solving</p>
+                <p class="error-message invis" id="cannot-solve-error">Error: This Board is Unsolvable</p>
+            </div>
+        </center>
+    </div>
+	</body>
+	<script src="solver.js"></script>
+</html>

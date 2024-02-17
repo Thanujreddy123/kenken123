@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KenKen Puzzle Rules</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>KenKen Puzzle Rules</h1>
+    <p>Unleash your inner puzzle master with KenKen!</p>
+  </header>
+  <main>
+    <h2>Grid and Numbers</h2>
+    <ul>
+      <li>The grid is n x n squares, where n is a positive integer greater than 1 (like the one above).</li>
+      <li>Each square can only contain one number.</li>
+      <li>The numbers used in the puzzle range from 1 to n (inclusive).</li>
+      <li>No number can be repeated in any row or column.</li>
+    </ul>
+    <h2>Cages</h2>
+    <img src="example.png" alt="KenKen cage with target number and operation">
+    <ul>
+      <li>The grid is divided into cages, outlined by heavy lines.</li>
+      <li>Each cage contains a target number and an operation symbol (+, -, *, /).</li>
+      <li>The numbers in a cage must combine to produce the target number using the specified operation.</li>
+      <li>Each number can be used multiple times within a cage, as long as it doesn't violate the row and column constraints.</li>
+      <li>Single-cell cages already have their number filled in and cannot be changed.</li>
+    </ul>
+  </main>
+</body>
+</html>
